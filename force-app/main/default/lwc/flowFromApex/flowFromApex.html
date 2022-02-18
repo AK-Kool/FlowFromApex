@@ -1,0 +1,38 @@
+<template>
+    <lightning-card title="Personal Information" 
+                    icon-name="action:info">
+        <lightning-input
+                name="firstName"
+                type="text"
+                placeholder="Enter First Name..."
+                onchange={handleChange}
+                >
+
+        </lightning-input>
+        <br/>
+        <lightning-input
+                        name="lastName"
+                        type="text"
+                        placeholder="Enter Last Name..."
+                        onchange={handleChange}
+                        >
+        </lightning-input>
+        <br/>
+        <lightning-input 
+                    name="email"
+                    type="email" 
+                    placeholder="Enter Email..."
+                    onchange={handleChange}
+                    > 
+        </lightning-input>
+        <br/>
+        <lightning-button
+                label="Submit"
+                variant="brand"
+                onclick={handleClick}
+                slot="footer"
+                disabled={checkDisabledStatus}
+                >
+        </lightning-button>
+    </lightning-card>
+</template>
