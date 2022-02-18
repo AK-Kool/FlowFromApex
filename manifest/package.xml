@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+        <members>FlowControllerLwc</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
         <members>Flow_LWC</members>
         <name>flow</name>
+    </types>
+    <types>
+        <members>flowFromApex</members>
+        <name>lightningComponentBundle</name>
     </types>
     <version>52.0</version>
 </Package>

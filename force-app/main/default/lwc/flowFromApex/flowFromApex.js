@@ -50,7 +50,7 @@ export default class FlowFromApex extends LightningElement
             this.template.querySelectorAll('lightning-input')[1].value = '';
             this.template.querySelectorAll('lightning-input')[2].value = '';
         }).catch(err => {
-            alert('Error!!');
+            alert('Error!!' + JSON.stringify(err));
         });
     }
 }
